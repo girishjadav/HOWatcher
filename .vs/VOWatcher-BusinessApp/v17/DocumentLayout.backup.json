@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\WorkSpace\\VOWatcher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|c:\\workspace\\vowatcher\\vowatcherwfpapp\\model\\commonfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\model\\commonfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\tracker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\tracker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\taskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\taskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\tracker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\tracker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\model\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\model\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\taskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\taskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\taskform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\taskform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\addtaskfrom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\addtaskfrom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CommonFunction.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\model\\CommonFunction.cs",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\model\\CommonFunction.cs",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\model\\CommonFunction.cs",
+              "RelativeToolTip": "VOWatcherWFPApp\\model\\CommonFunction.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwCMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T11:15:13.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\App.config",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\App.config",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\App.config",
+              "RelativeToolTip": "VOWatcherWFPApp\\App.config",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-18T08:49:12.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "general.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\model\\general.cs",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\model\\general.cs",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\model\\general.cs",
+              "RelativeToolTip": "VOWatcherWFPApp\\model\\general.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAiwHAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T08:39:08.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tracker.xaml.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\Tracker.xaml.cs",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\Tracker.xaml.cs",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\Tracker.xaml.cs",
+              "RelativeToolTip": "VOWatcherWFPApp\\Tracker.xaml.cs",
+              "ViewState": "AgIAAKYEAAAAAAAAAAAuwKUEAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T09:53:38.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TaskWindow.xaml.cs",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml.cs",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\TaskWindow.xaml.cs",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml.cs",
+              "RelativeToolTip": "VOWatcherWFPApp\\TaskWindow.xaml.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAAKEAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T09:51:51.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TaskWindow.xaml",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\TaskWindow.xaml",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml",
+              "RelativeToolTip": "VOWatcherWFPApp\\TaskWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-15T09:51:40.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TaskForm.xaml",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskForm.xaml",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\TaskForm.xaml",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskForm.xaml",
+              "RelativeToolTip": "VOWatcherWFPApp\\TaskForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-15T09:51:37.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddTaskFrom.xaml",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\AddTaskFrom.xaml",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\AddTaskFrom.xaml",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\AddTaskFrom.xaml",
+              "RelativeToolTip": "VOWatcherWFPApp\\AddTaskFrom.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-15T09:50:21.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tracker.xaml",
+              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\Tracker.xaml",
+              "RelativeDocumentMoniker": "VOWatcherWFPApp\\Tracker.xaml",
+              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\Tracker.xaml",
+              "RelativeToolTip": "VOWatcherWFPApp\\Tracker.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-08-01T11:44:39.386Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tracing</name>
+    </assembly>
+    <members>
+        <member name="T:Tracing.ActionTracer">
+            <summary>
+            ActionTracer can be used to intercept trace writes.
+            The defined forwardingAction is called whenever a trace is written to the ITracer interface.
+            </summary>
+        </member>
+        <member name="T:Tracing.DebugTracer">
+            <summary>
+            DebugTracer is a tracer instance which writes trace entries to the
+            trace listeners in the <see cref="P:System.Diagnostics.Debug.Listeners"/> collection.
+            
+            In Visual Studio > Tools > Debugging > General, the setting for "Redirect all Output Window text to the Immediate Window" needs to be checked,
+            in order to see Debug.Writeline messages.
+            </summary>
+        </member>
+        <member name="T:Tracing.EmptyTracer">
+            <summary>
+            EmptyTracer is - as the name implies - a tracer instance which ignores all trace writes.
+            </summary>
+        </member>
+        <member name="T:Tracing.ValidatedNotNullAttribute">
+            <summary>
+            ValidatedNotNullAttribute signals to static code analysis (CA1062)
+            to trust that we're really checking the marked parameters for null references.
+            </summary>
+        </member>
+        <member name="T:Tracing.IoC.UseCacheAttribute">
+            <summary>
+            When used with the SimpleIoc container, this annotation can be used 
+            to mark interfaces which shall not be cached in the instances cache of SimpleIoc.
+            Every attempt to construct a dependency of a marked interface will end up
+            in creating a new object from scratch.
+            </summary>
+        </member>
+        <member name="M:Tracing.ITracerFactory.Create(System.String)">
+            <summary>
+            Creates a <see cref="T:Tracing.ITracer"/> whose name is set to the specified <paramref name="name"/>.
+            </summary>
+            <param name="name">The name of the tracer.</param>
+            <returns>A new <see cref="T:Tracing.ITracer"/> instance.</returns>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="name"/> parameter is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">The <paramref name="name"/> parameter is an empty string.</exception>
+        </member>
+        <member name="M:Tracing.ITracerFactory.Create(System.Type)">
+            <summary>
+            Creates a <see cref="T:Tracing.ITracer"/> whose name is set to the <see cref="P:System.Type.FullName"/> of the specified <paramref name="type"/>.
+            </summary>
+            <param name="type">The type whose fully qualified type name is used as the name of the tracer.</param>
+            <returns>A new <see cref="T:Tracing.ITracer"/> instance.</returns>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="type"/> parameter is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tracing.ITracerFactory.Create``1">
+            <summary>
+            Creates a <see cref="T:Tracing.ITracer"/> whose name is set to the <see cref="P:System.Type.FullName"/> of the specified <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type whose fully qualified type name is used as the name of the tracer.</typeparam>
+            <returns>A new <see cref="T:Tracing.ITracer"/> instance.</returns>
+        </member>
+        <member name="M:Tracing.TraceEntry.#ctor(Tracing.Category,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tracing.TraceEntry"/> class.
+            </summary>
+            <param name="category">The category this trace entry belongs to.</param>
+            <param name="message">The message to trace.</param>
+            <param name="arguments">The arguments used to format the <paramref name="message"/>.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="message"/> parameter is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">The <paramref name="message"/> parameter is an empty string.</exception>
+            <exception cref="T:System.FormatException">The <paramref name="message"/> is invalid for formatting.
+            -or- The number indicating an argument to format is less than zero, or greater than or equal to the length of the <paramref name="arguments"/> array.</exception>
+            <remarks>The <paramref name="message"/> is formatted using the <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>.</remarks>
+        </member>
+        <member name="M:Tracing.TraceEntry.#ctor(Tracing.Category,System.Exception,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Tracing.TraceEntry"/> class.
+            </summary>
+            <param name="category">The category this trace entry belongs to.</param>
+            <param name="exception">The exception that produced this trace entry.</param>
+            <param name="message">The message to trace.</param>
+            <param name="arguments">The arguments used to format the <paramref name="message"/>.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="message"/> parameter is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">The <paramref name="message"/> parameter is an empty string.</exception>
+            <exception cref="T:System.FormatException">The <paramref name="message"/> is invalid for formatting.
+            -or- The number indicating an argument to format is less than zero, or greater than or equal to the length of the <paramref name="arguments"/> array.</exception>
+            <remarks>The <paramref name="message"/> is formatted using the <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>.</remarks>
+        </member>
+        <member name="P:Tracing.TraceEntry.Category">
+            <summary>
+            Gets the category this trace entry belongs to.
+            </summary>
+            <value>The category this trace entry belongs to.</value>
+        </member>
+        <member name="P:Tracing.TraceEntry.Exception">
+            <summary>
+            Gets the exception that produced this trace entry.
+            </summary>
+            <value>The exception that produced this trace entry.</value>
+        </member>
+        <member name="P:Tracing.TraceEntry.Message">
+            <summary>
+            Gets the message to trace.
+            </summary>
+            <value>The message to trace.</value>
+        </member>
+        <member name="T:Tracing.Tracer">
+            <summary>
+                Provides tracing functionality and encapsulates the concrete tracing implementation.
+            </summary>
+        </member>
+        <member name="P:Tracing.Tracer.Factory">
+            <summary>
+                Gets the configured <see cref="T:Tracing.ITracerFactory" />.
+            </summary>
+        </member>
+        <member name="M:Tracing.Tracer.SetDefaultFactory(Tracing.ITracerFactory)">
+            <summary>
+                Sets the default tracer factory <see cref="T:Tracing.ITracerFactory" /> to use within the <see cref="T:Tracing.Tracer" />.
+            </summary>
+            <param name="factory">The <see cref="T:Tracing.ITracerFactory" /> to use within the <see cref="T:Tracing.Tracer" />.</param>
+        </member>
+        <member name="M:Tracing.Tracer.SetFactory(Tracing.ITracerFactory)">
+            <summary>
+                Sets the concrete <see cref="T:Tracing.ITracerFactory" /> to use within the <see cref="T:Tracing.Tracer" />.
+            </summary>
+            <param name="factory">The <see cref="T:Tracing.ITracerFactory" /> to use within the <see cref="T:Tracing.Tracer" />.</param>
+        </member>
+        <member name="M:Tracing.Tracer.Create(System.String)">
+            <summary>
+                Creates a <see cref="T:Tracing.ITracer" /> whose name is set to the specified <paramref name="tracerName" />.
+            </summary>
+            <param name="tracerName">The name of the tracer.</param>
+            <returns>A new <see cref="T:Tracing.ITracer" /> instance.</returns>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="tracerName" /> parameter is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">The <paramref name="tracerName" /> parameter is an empty string.</exception>
+        </member>
+        <member name="M:Tracing.Tracer.Create(System.Type)">
+            <summary>
+                Creates a <see cref="T:Tracing.ITracer" /> whose name is set to the <see cref="P:System.Type.FullName" /> of the specified
+                <paramref name="tracerType" />.
+            </summary>
+            <param name="tracerType">The type whose fully qualified type name is used as the name of the tracer.</param>
+            <returns>A new <see cref="T:Tracing.ITracer" /> instance.</returns>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="tracerType" /> parameter is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tracing.Tracer.Create``1(``0)">
+            <summary>
+                Creates a <see cref="T:Tracing.ITracer" /> whose name is set to the <see cref="P:System.Type.FullName" /> of the specified
+                <typeparamref name="T" />.
+            </summary>
+            <example>
+                Call
+                <code>ITracer tracer = Tracer.Create(this); in order to create a new ITracer instance named by the type of 'this'.</code>
+            </example>
+            <param name="tracerTarget">This parameter can be ignored. We're only interested in the type of the object.</param>
+            <typeparam name="T">The type whose fully qualified type name is used as the name of the tracer.</typeparam>
+            <returns>A new <see cref="T:Tracing.ITracer" /> instance.</returns>
+        </member>
+        <member name="M:Tracing.TracerBase.Write(Tracing.Category,System.String,System.Object[])">
+            <summary>
+            Traces a new trace entry with the specified message.
+            </summary>
+            <param name="category">The category this trace entry belongs to.</param>
+            <param name="message">The message to trace.</param>
+            <param name="arguments">The arguments used to format the <paramref name="message"/>.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="message"/> parameter is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">The <paramref name="message"/> parameter is an empty string.</exception>
+            <exception cref="T:System.FormatException">The <paramref name="message"/> is invalid for formatting.
+            -or- The number indicating an argument to format is less than zero, or greater than or equal to the length of the <paramref name="arguments"/> array.</exception>
+            <remarks>The <paramref name="message"/> is formatted using the <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>.</remarks>
+        </member>
+        <member name="M:Tracing.TracerBase.Write(Tracing.Category,System.Exception,System.String,System.Object[])">
+            <summary>
+            Traces a new trace entry with the specified message.
+            </summary>
+            <param name="category">The category this trace entry belongs to.</param>
+            <param name="exception">The exception that produced this trace entry.</param>
+            <param name="message">The message to trace.</param>
+            <param name="arguments">The arguments used to format the <paramref name="message"/>.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="message"/> parameter is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">The <paramref name="message"/> parameter is an empty string.</exception>
+            <exception cref="T:System.FormatException">The <paramref name="message"/> is invalid for formatting.
+            -or- The number indicating an argument to format is less than zero, or greater than or equal to the length of the <paramref name="arguments"/> array.</exception>
+            <remarks>The <paramref name="message"/> is formatted using the <see cref="P:System.Globalization.CultureInfo.InvariantCulture"/>.</remarks>
+        </member>
+        <member name="M:Tracing.TracerBase.Write(Tracing.TraceEntry)">
+            <summary>
+            Traces the specified <paramref name="entry"/>.
+            </summary>
+            <param name="entry">The trace entry to trace.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="entry"/> parameter is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tracing.TracerBase.WriteCore(Tracing.TraceEntry)">
+            <summary>
+            Traces the specified <paramref name="entry"/>. This is the core method which is called from all public Write methods.
+            The Check if <paramref name="entry"/> is not null and if <see cref="M:Tracing.TracerBase.IsCategoryEnabled(Tracing.Category)"/> is already done.
+            </summary>
+            <param name="entry">The trace entry to trace.</param>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="entry"/> parameter is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tracing.TracerBase.IsCategoryEnabled(Tracing.Category)">
+            <summary>
+            Determines whether the specified <paramref name="category"/> is enabled.
+            </summary>
+            <param name="category">The category to check if it is enabled.</param>
+            <returns><c>True</c> if the specified <paramref name="category"/> is enabled; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:Tracing.TracerExtensions.FatalError(Tracing.ITracer,System.Exception)">
+            <summary>
+            This call is used when the application is about to crash.
+            There is usually only limited time and resources to report a fatal error.
+            </summary>
+        </member>
+        <member name="M:Tracing.TracerFactoryBase.Create(System.String)">
+            <summary>
+            Creates a <see cref="T:Tracing.ITracer"/> whose name is set to the specified <paramref name="name"/>.
+            </summary>
+            <param name="name">The name of the tracer.</param>
+            <returns>A new <see cref="T:Tracing.ITracer"/> instance.</returns>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="name"/> parameter is <c>null</c>.</exception>
+            <exception cref="T:System.ArgumentException">The <paramref name="name"/> parameter is an empty string.</exception>
+        </member>
+        <member name="M:Tracing.TracerFactoryBase.Create(System.Type)">
+            <summary>
+            Creates a <see cref="T:Tracing.ITracer"/> whose name is set to the <see cref="P:System.Type.FullName"/> of the specified <paramref name="type"/>.
+            </summary>
+            <param name="type">The type whose fully qualified type name is used as the name of the tracer.</param>
+            <returns>A new <see cref="T:Tracing.ITracer"/> instance.</returns>
+            <exception cref="T:System.ArgumentNullException">The <paramref name="type"/> parameter is <c>null</c>.</exception>
+        </member>
+        <member name="M:Tracing.TracerFactoryBase.Create``1">
+            <summary>
+            Creates a <see cref="T:Tracing.ITracer"/> whose name is set to the <see cref="P:System.Type.FullName"/> of the specified <typeparamref name="T"/>.
+            </summary>
+            <typeparam name="T">The type whose fully qualified type name is used as the name of the tracer.</typeparam>
+            <returns>A new <see cref="T:Tracing.ITracer"/> instance.</returns>
+        </member>
+    </members>
+</doc>

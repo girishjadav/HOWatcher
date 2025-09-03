@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="VOWatcherWPFApp.TimePicker"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Name="root">
+
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+        <TextBox x:Name="HourBox" Width="30" MaxLength="2" TextAlignment="Center"
+                 PreviewTextInput="NumberOnly" TextChanged="TimePartChanged"/>
+        <TextBlock Text=":" VerticalAlignment="Center"/>
+        <TextBox x:Name="MinuteBox" Width="30" MaxLength="2" TextAlignment="Center"
+                 PreviewTextInput="NumberOnly" TextChanged="TimePartChanged"/>
+        <TextBlock Text=":" VerticalAlignment="Center"/>
+        <TextBox x:Name="SecondBox" Width="30" MaxLength="2" TextAlignment="Center"
+                 PreviewTextInput="NumberOnly" TextChanged="TimePartChanged"/>
+    </StackPanel>
+</UserControl>

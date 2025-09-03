@@ -1,0 +1,180 @@
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\VOWatcher.exe.config
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\VOWatcher.exe
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\VOWatcher.pdb
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\BusinessData.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\BusinessService.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Dapper.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\ObjectListView.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Buffers.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.CodeDom.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Memory.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.ValueTuple.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\BusinessData.pdb
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\BusinessService.pdb
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\BusinessService.dll.config
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Dapper.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\ObjectListView.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Buffers.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.CodeDom.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Memory.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.ValueTuple.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.AssemblyReference.cache
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\BusinessApp.Form1.resources
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.Properties.Resources.resources
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.GenerateResource.cache
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.CoreCompileInputs.cache
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.CopyComplete
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.exe
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.pdb
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.LoginForm.resources
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\VOAPIService.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\RestSharp.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\VOAPIService.pdb
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\VOAPIService.dll.config
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\RestSharp.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Text.Json.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Text.Json.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\anjan\OneDrive\Documents\Workspace\Application\VOWatcher\BusinessApp\obj\Debug\VOWatcher.TaskForm.resources
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\vowatcher.sqlite
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\VOWatcher.exe.config
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\VOWatcher.exe
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\VOWatcher.pdb
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\BusinessData.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\BusinessService.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Dapper.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\ObjectListView.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Buffers.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.CodeDom.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Memory.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.ValueTuple.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\VOAPIService.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\RestSharp.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Text.Json.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\BusinessData.pdb
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\BusinessService.pdb
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\BusinessService.dll.config
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\VOAPIService.pdb
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\VOAPIService.dll.config
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Dapper.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\ObjectListView.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Buffers.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.CodeDom.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Memory.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.ValueTuple.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\RestSharp.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Text.Json.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.AssemblyReference.cache
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\BusinessApp.Form1.resources
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.LoginForm.resources
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.Properties.Resources.resources
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.TaskForm.resources
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.GenerateResource.cache
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.CoreCompileInputs.cache
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.CopyComplete
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.exe
+C:\Users\anjan\Dropbox (ATeam)\ATeam Team Folder\Dev-Application\VirtualOffice\VOWatcher\BusinessApp\obj\Debug\VOWatcher.pdb
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\vowatcher.sqlite
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\TimeTracker-HO.exe.config
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\TimeTracker-HO.exe.manifest
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\TimeTracker-HO.application
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\TimeTracker-HO.exe
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\TimeTracker-HO.pdb
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\BusinessData.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\BusinessService.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Dapper.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Newtonsoft.Json.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\ObjectListView.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Buffers.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.CodeDom.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Data.SQLite.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Memory.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Numerics.Vectors.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.ValueTuple.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\VOAPIService.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\RestSharp.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Text.Json.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\BusinessData.pdb
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\BusinessService.pdb
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\BusinessService.dll.config
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\VOAPIService.pdb
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\VOAPIService.dll.config
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Dapper.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Newtonsoft.Json.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\ObjectListView.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Buffers.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.CodeDom.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Data.SQLite.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Memory.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Numerics.Vectors.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.ValueTuple.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\RestSharp.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Text.Json.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Text.Encodings.Web.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\WorkSpace\VOWatcher\BusinessApp\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.AssemblyReference.cache
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\BusinessApp.Form1.resources
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\VOWatcher.HOTimeTracker.resources
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\VOWatcher.LoginForm.resources
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\TimeTrackerHO.Properties.Resources.resources
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\VOWatcher.TaskForm.resources
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\VOWatcher.TaskManager.resources
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.GenerateResource.cache
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.CoreCompileInputs.cache
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\TimeTracker-HO.exe.manifest
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\TimeTracker-HO.application
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\VOWatcher.csproj.Up2Date
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\TimeTracker-HO.exe
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\TimeTracker-HO.pdb
+C:\WorkSpace\VOWatcher\BusinessApp\obj\Debug\TimeTracker-HO.exe.config

@@ -1,0 +1,60 @@
+﻿<Window x:Class="VOWatcherWFPApp.HOTimeTrackerWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VOWatcherWFPApp"
+        mc:Ignorable="d"
+        Title="{Binding WindowTitle}" Height="485" Width="850"        
+        Topmost="True"
+        Background="PaleGoldenrod"
+        SourceInitialized="HOTimeTrackerWPF_SourceInitialized"
+        Activated="HOTimeTrackerWPF_Activated"
+        Deactivated="HOTimeTrackerWPF_Deactivated"
+        Icon="timetracker.ico"
+        >
+    <Grid>
+        <Calendar x:Name="monthCalendar1" HorizontalAlignment="Left" Margin="580,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.838,0.04" Background="LightGoldenrodYellow"/>
+
+        
+        <DataGrid x:Name="dataGridView2" 
+                  AutoGenerateColumns="False"  
+                  MaxHeight="200" Margin="3,-21,0,170" Background="LightGoldenrodYellow" BorderThickness="0" 
+                  VerticalScrollBarVisibility="Auto" GridLinesVisibility="None" 
+                  HeadersVisibility="Column"
+                  CanUserAddRows="False"
+                  RowHeaderWidth="0">
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Add to Task" />
+                    <MenuItem Header="Delete"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Application" Binding="{Binding processname}" Width="3*" MinWidth="385"/>
+                <DataGridTextColumn Header="Start Time" Binding="{Binding starttime}"/>
+                <DataGridTextColumn Header="End Time" Binding="{Binding endtime}"/>
+                <DataGridTextColumn Header="TotalTime" Binding="{Binding totaltimesecounds}"/>
+                <DataGridTextColumn Header="IdleTime" Binding="{Binding idletimesecounds}"/>
+                <DataGridTextColumn Header="ActualTime" Binding="{Binding actualsecounds}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="label1" Content="Tracker Log" HorizontalAlignment="Left" Margin="0,-1,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Bold"/>
+        <DataGrid x:Name="dataGridView1" AutoGenerateColumns="False" Width="590" MaxHeight="175" Margin="3,197,257,-63" Background="LightGoldenrodYellow" BorderThickness="0"                   
+                  VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled"  GridLinesVisibility="None" HeadersVisibility="Column"
+                  CanUserAddRows="False" 
+                  RowHeaderWidth="0">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Application" Binding="{Binding processname}"  Width="360"/>
+                <DataGridTextColumn Header="TotalTime" Binding="{Binding totaltimesecounds}"/>
+                <DataGridTextColumn Header="IdleTime" Binding="{Binding idletimesecounds}"/>
+                <DataGridTextColumn Header="ActualTime" Binding="{Binding actualsecounds}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="label2" Content="Tracker Summary" HorizontalAlignment="Left" Margin="0,238,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Bold" RenderTransformOrigin="0.486,9.882"/>
+        <Label x:Name="label3" Content="00:00:00" HorizontalAlignment="Left" Margin="722,0,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content=" Add Task " HorizontalAlignment="Left" Margin="764,281,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
