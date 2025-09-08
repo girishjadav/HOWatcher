@@ -20,3 +20,14 @@ C:\WorkSpace\VOWatcher\BusinessData\obj\Debug\BusinessData.csproj.CoreCompileInp
 C:\WorkSpace\VOWatcher\BusinessData\obj\Debug\Business.395DD182.Up2Date
 C:\WorkSpace\VOWatcher\BusinessData\obj\Debug\BusinessData.dll
 C:\WorkSpace\VOWatcher\BusinessData\obj\Debug\BusinessData.pdb
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\bin\Debug\BusinessData.dll
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\bin\Debug\BusinessData.pdb
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\bin\Debug\Dapper.dll
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\bin\Debug\System.Data.SQLite.dll
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\bin\Debug\Dapper.xml
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\bin\Debug\System.Data.SQLite.xml
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\obj\Debug\BusinessData.csproj.AssemblyReference.cache
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\obj\Debug\BusinessData.csproj.CoreCompileInputs.cache
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\obj\Debug\Business.395DD182.Up2Date
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\obj\Debug\BusinessData.dll
+C:\Workspace\GitHubProjet\HOWatcher\BusinessData\obj\Debug\BusinessData.pdb

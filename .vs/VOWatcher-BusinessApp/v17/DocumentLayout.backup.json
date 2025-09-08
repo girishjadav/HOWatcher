@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\WorkSpace\\VOWatcher\\",
+  "WorkspaceRootPath": "C:\\Workspace\\GitHubProjet\\HOWatcher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|c:\\workspace\\vowatcher\\vowatcherwfpapp\\model\\commonfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|c:\\workspace\\githubprojet\\howatcher\\vowatcherwfpapp\\model\\commonfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\model\\commonfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\tracker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\Workspace\\GitHubProjet\\HOWatcher\\vowatcherwfpapp\\tracker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\tracker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\taskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\Workspace\\GitHubProjet\\HOWatcher\\vowatcherwfpapp\\taskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\taskwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\tracker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\Workspace\\GitHubProjet\\HOWatcher\\vowatcherwfpapp\\tracker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\tracker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\Workspace\\GitHubProjet\\HOWatcher\\vowatcherwfpapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\model\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\Workspace\\GitHubProjet\\HOWatcher\\vowatcherwfpapp\\model\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\model\\general.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\taskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\Workspace\\GitHubProjet\\HOWatcher\\vowatcherwfpapp\\taskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\taskwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\taskform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\Workspace\\GitHubProjet\\HOWatcher\\vowatcherwfpapp\\taskform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\taskform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\WorkSpace\\VOWatcher\\vowatcherwfpapp\\addtaskfrom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|C:\\Workspace\\GitHubProjet\\HOWatcher\\vowatcherwfpapp\\addtaskfrom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{D17810B2-3A86-4EA2-B527-650643FF15E8}|VOWatcherWFPApp\\VOWatcherWFPApp.csproj|solutionrelative:vowatcherwfpapp\\addtaskfrom.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -56,9 +56,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "CommonFunction.cs",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\model\\CommonFunction.cs",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\model\\CommonFunction.cs",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\model\\CommonFunction.cs",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\model\\CommonFunction.cs",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\model\\CommonFunction.cs",
               "RelativeToolTip": "VOWatcherWFPApp\\model\\CommonFunction.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAqwCMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -69,9 +69,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "App.config",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\App.config",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\App.config",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\App.config",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\App.config",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\App.config",
               "RelativeToolTip": "VOWatcherWFPApp\\App.config",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
@@ -81,9 +81,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "general.cs",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\model\\general.cs",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\model\\general.cs",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\model\\general.cs",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\model\\general.cs",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\model\\general.cs",
               "RelativeToolTip": "VOWatcherWFPApp\\model\\general.cs",
               "ViewState": "AgIAAL0AAAAAAAAAAAAiwHAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -93,9 +93,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Tracker.xaml.cs",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\Tracker.xaml.cs",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\Tracker.xaml.cs",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\Tracker.xaml.cs",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\Tracker.xaml.cs",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\Tracker.xaml.cs",
               "RelativeToolTip": "VOWatcherWFPApp\\Tracker.xaml.cs",
               "ViewState": "AgIAAKYEAAAAAAAAAAAuwKUEAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -105,9 +105,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "TaskWindow.xaml.cs",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml.cs",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\TaskWindow.xaml.cs",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml.cs",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml.cs",
               "RelativeToolTip": "VOWatcherWFPApp\\TaskWindow.xaml.cs",
               "ViewState": "AgIAAHcAAAAAAAAAAAAAAKEAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -117,9 +117,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "TaskWindow.xaml",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\TaskWindow.xaml",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\TaskWindow.xaml",
               "RelativeToolTip": "VOWatcherWFPApp\\TaskWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-15T09:51:40.997Z"
@@ -128,9 +128,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "TaskForm.xaml",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskForm.xaml",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\TaskForm.xaml",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\TaskForm.xaml",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\TaskForm.xaml",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\TaskForm.xaml",
               "RelativeToolTip": "VOWatcherWFPApp\\TaskForm.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-15T09:51:37.718Z"
@@ -139,9 +139,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "AddTaskFrom.xaml",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\AddTaskFrom.xaml",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\AddTaskFrom.xaml",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\AddTaskFrom.xaml",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\AddTaskFrom.xaml",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\AddTaskFrom.xaml",
               "RelativeToolTip": "VOWatcherWFPApp\\AddTaskFrom.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-15T09:50:21.778Z"
@@ -150,9 +150,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Tracker.xaml",
-              "DocumentMoniker": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\Tracker.xaml",
+              "DocumentMoniker": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\Tracker.xaml",
               "RelativeDocumentMoniker": "VOWatcherWFPApp\\Tracker.xaml",
-              "ToolTip": "C:\\WorkSpace\\VOWatcher\\VOWatcherWFPApp\\Tracker.xaml",
+              "ToolTip": "C:\\Workspace\\GitHubProjet\\HOWatcher\\VOWatcherWFPApp\\Tracker.xaml",
               "RelativeToolTip": "VOWatcherWFPApp\\Tracker.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-08-01T11:44:39.386Z"

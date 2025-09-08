@@ -4,6 +4,7 @@ using System;
 using System.Configuration;
 using System.IO;
 using System.Security.Cryptography;
+using System.Net;
 using System.Text;
 using System.Web.UI.WebControls;
 using System.Windows;
@@ -108,9 +109,18 @@ namespace VOWatcherWFPApp
                 string module = "/account/login";
                 string fullUrl = baseUrl.TrimEnd('/') + module;
 
+                // Ensure TLS 1.2 for modern HTTPS endpoints
+                ServicePointManager.SecurityProtocol |= SecurityProtocolType.Tls12;
+
                 var client = new RestClient(fullUrl);
                 var request = new RestRequest(Method.POST);
                 request.AddHeader("Content-Type", "application/json");
+                // Optionally include API key if configured
+                var apiKey = ConfigurationManager.AppSettings["apikey"];
+                if (!string.IsNullOrWhiteSpace(apiKey))
+                {
+                    request.AddHeader("apikey", apiKey);
+                }
 
                 var credentials = new { email = username, password = password };
                 string jsonBody = JsonConvert.SerializeObject(credentials);
@@ -141,11 +151,30 @@ namespace VOWatcherWFPApp
                         {
                             this.Close();
                         }
+                        return; // ✅ stop further processing to avoid showing failure message
                     }
                 }
 
+                // If here, login did not succeed. Show diagnostic details if available
                 if (!silent)
-                    System.Windows.MessageBox.Show("Login failed. Check credentials or server response.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                {
+                    if (response != null)
+                    {
+                        string reason = string.Empty;
+                        try
+                        {
+                            reason = string.IsNullOrWhiteSpace(response.Content) ? response.ErrorMessage : response.Content;
+                        }
+                        catch { }
+
+                        string message = $"Login failed. Status: {response.StatusCode}\n{(string.IsNullOrWhiteSpace(reason) ? "Check credentials or server response." : reason)}";
+                        System.Windows.MessageBox.Show(message, "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                    }
+                    else
+                    {
+                        System.Windows.MessageBox.Show("Login failed. No response from server.", "Error", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+                    }
+                }
             }
             else
             {

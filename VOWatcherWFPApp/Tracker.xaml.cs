@@ -527,19 +527,25 @@ namespace VOWatcherWFPApp
 
                 try
                 {
-                    var oAuthParams = new VOAPIOAuthParams
+                    string baseUrl = ConfigurationManager.AppSettings["baseurl"]?.ToString()?.TrimEnd('/');
+                    if (string.IsNullOrWhiteSpace(baseUrl))
                     {
-                        BaseUrl = ConfigurationManager.AppSettings["baseurl"].ToString(),
-                        Module = "/UtilizationTracker/AddEditTrackerTask"
-                    };
-
-                    var oClient = VOApiRestSharp.GetInstance(oAuthParams);
-                    string result = oClient.PostModuleResult(token, data);
-
-                    if (string.IsNullOrWhiteSpace(result))
-                    {
-                        System.Windows.MessageBox.Show("Failed to stop task.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        System.Windows.MessageBox.Show("Base URL missing in configuration.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                         return;
+                    }
+
+                    using (var http = new HttpClient())
+                    {
+                        http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                        var json = JsonConvert.SerializeObject(data);
+                        var content = new StringContent(json, Encoding.UTF8, "application/json");
+                        var resp = await http.PostAsync($"{baseUrl}/UtilizationTracker/AddEditTrackerTask", content);
+                        if (!resp.IsSuccessStatusCode)
+                        {
+                            var body = await resp.Content.ReadAsStringAsync();
+                            System.Windows.MessageBox.Show($"Failed to stop task. Status: {resp.StatusCode}\n{body}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                            return;
+                        }
                     }
 
                     Debug.WriteLine("Stop task payload: " + JsonConvert.SerializeObject(data, Formatting.Indented));
@@ -562,14 +568,7 @@ namespace VOWatcherWFPApp
 
 
 
-            // Tracker page URL from baseUrl
-            string url = "employee/area/utilizationtracker";
-            var psi = new ProcessStartInfo
-            {
-                FileName = url,
-                UseShellExecute = false
-            };
-            Process.Start(psi);
+            // Removed redirect to portal
         }
 
 
@@ -2058,20 +2057,7 @@ namespace VOWatcherWFPApp
                             await FetchTrackerTask();
                             await FetchAndDisplayTrackerTask();
 
-                            // Open GoVirtual page
-                            string taskUrl = "https://app.govirtualnow.in/#/employee/area/utilizationtracker";
-                            try
-                            {
-                                System.Diagnostics.Process.Start(new ProcessStartInfo
-                                {
-                                    FileName = taskUrl,
-                                    UseShellExecute = true
-                                });
-                            }
-                            catch (Exception ex)
-                            {
-                                System.Windows.MessageBox.Show("Unable to open GoVirtual page: " + ex.Message);
-                            }
+                            // Removed redirect to portal per user request
                         }
                         else
                         {
