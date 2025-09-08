@@ -2,5 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/VOWatcher-BusinessApp/FileContentIndex/03793cf0-8487-4f8c-be7b-6483ebb3b4b0.vsidx
-/.vs/VOWatcher-BusinessApp/FileContentIndex
+# /.vs/VOWatcher-BusinessApp/FileContentIndex/03793cf0-8487-4f8c-be7b-6483ebb3b4b0.vsidx
+# /.vs/VOWatcher-BusinessApp/FileContentIndex
+# Ignore Debug folders everywhere
+**/Debug/
+
+# Specifically ignore Debug under VOWatcherWFPApp/obj
+VOWatcherWFPApp/obj/Debug/
+/.vs/VOWatcher-BusinessApp/FileContentIndex/84b30889-2554-4472-ae68-cf79ef7f17df.vsidx
