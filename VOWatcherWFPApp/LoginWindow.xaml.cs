@@ -14,7 +14,7 @@ namespace VOWatcherWFPApp
 {
     public partial class LoginWindow : Window
     {
-        private static string dirCSV = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+        private static string dirCSV = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "HOWatcher");
         public static bool isLogin = false;
         public static UserDetail userDetail = new UserDetail();
 
@@ -60,6 +60,8 @@ namespace VOWatcherWFPApp
                         var tracker = Application.Current.MainWindow as Tracker;
                         if (tracker != null)
                         {
+                            // Initialize HttpClient and load tracker data after successful auto-login
+                            tracker.InitializeHttpClient();
                             tracker.LoadTrackerData(); // ✅ Call only after login success
                         }
 
@@ -240,6 +242,12 @@ namespace VOWatcherWFPApp
         {
             try
             {
+                // Ensure the directory exists
+                if (!Directory.Exists(dirCSV))
+                {
+                    Directory.CreateDirectory(dirCSV);
+                }
+
                 string filePath = Path.Combine(dirCSV, "schema.ini");
                 string encryptedPassword = EncryptPassword(password);
 

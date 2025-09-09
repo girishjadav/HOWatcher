@@ -20,7 +20,7 @@ namespace VOWatcher
     public partial class LoginForm : Form
     {
 
-		private static string dirCSV = System.IO.Path.GetDirectoryName(Application.ExecutablePath);       //directory of file to import
+		private static string dirCSV = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "HOWatcher");       //directory of file to import
 		public static bool isLogin = false;
 		public static UserDetail userDetail = new UserDetail();
 		public LoginForm()
@@ -55,6 +55,12 @@ namespace VOWatcher
 
 			try
 			{
+				// Ensure the directory exists
+				if (!Directory.Exists(dirCSV))
+				{
+					Directory.CreateDirectory(dirCSV);
+				}
+
 				FileStream fsOutput = new FileStream(dirCSV + "\\schema.ini", FileMode.Create, FileAccess.Write);
 				StreamWriter srOutput = new StreamWriter(fsOutput);
 				string s1, s2, s3, s4, s5;

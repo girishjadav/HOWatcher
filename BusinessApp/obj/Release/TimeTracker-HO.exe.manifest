@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BusinessData.dll" size="10752">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BusinessData.dll" size="11264">
       <assemblyIdentity name="BusinessData" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4NXEOgc0oqQOxPYS1TEObhj+Lj9Zp2Fid0UV0296mi8=</dsig:DigestValue>
+        <dsig:DigestValue>typ5jG3G1XCxEFvkqG9DB5dUAro0ZDdC+Q2UuK/Bzxg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tphZnqnXyin4F+ktzjg3vDBgP2k2RYkNVdiJ2WMue8M=</dsig:DigestValue>
+        <dsig:DigestValue>cNgxgaS12cK1C40AZL3pd4+aYdUFBu2tMAWSZ+zxcmU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -283,14 +283,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimeTracker-HO.exe" size="176048">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimeTracker-HO.exe" size="178608">
       <assemblyIdentity name="TimeTracker-HO" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>PW/y4xMi2hhMTJGI//o6ZMcM5Ybz7NQunWEzG6U/Sg0=</dsig:DigestValue>
+        <dsig:DigestValue>CTi9uSmSB+IFC1S0f9Kd2q8ZQHSzOMOe4FmWk08N5NQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -302,7 +302,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sAJ6PnInqZAKxbAZP5B5/gEkb9PW6eXPa75yVkq8KJs=</dsig:DigestValue>
+        <dsig:DigestValue>q7MwGSFGZH1ar5a0IflpdjvfMMUbPjPiBraI239tP/Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -330,7 +330,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>aF9sK60LktLtj/mR+fllAaO8cW6PHd0mVvNZ2xU5VEo=</dsig:DigestValue>
+      <dsig:DigestValue>yJ+U8aiOSvRdH+SaYM+mB4xy9rLRCP1TktSCqLl46to=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

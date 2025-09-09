@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qIn8VsiYy3bmL/BCx8xGCJ0POaL/x/WgwZOMUQRTBNU=</dsig:DigestValue>
+        <dsig:DigestValue>h6urNK1rao+IaWfYTODaK9Q60x90AS3Tx3/O3T5xO6Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gRFV9u4KdbJ7Ngi1NTt1/QP1PHOS6QQ3cR0/Hsc9B8E=</dsig:DigestValue>
+        <dsig:DigestValue>lKIPdwE4eto/3b/0D+HO8z/bGehHDFvGnK/vmrYjY/s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -283,14 +283,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimeTracker-HO.exe" size="183728">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimeTracker-HO.exe" size="184752">
       <assemblyIdentity name="TimeTracker-HO" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z8fEDz4gC4NNaNJv+L/UJ3/uhKUEZfnx992+Aq1n92s=</dsig:DigestValue>
+        <dsig:DigestValue>uo10E3YARBJIVURZc7MEbOALCOPQ3+pyPi71N2ZXyn0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -302,7 +302,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wi2i9TXg0iFkZOATw6FP5GN66NeFwkF1akqDXiyoMjo=</dsig:DigestValue>
+        <dsig:DigestValue>h5v5rib1xQ9Iv6m5AQUGQ02QdpdIDdwA8FAElPvAltM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

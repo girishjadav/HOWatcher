@@ -75,12 +75,13 @@ namespace VOWatcherWFPApp.model
             // Check if this is a browser application
             if (IsBrowserProcess(appName))
             {
-                // For browsers, key by site/app title only so multiple tabs group together
-                // Ignore dynamic file names or tab-specific prefixes
+                // For browsers, create unique keys for each tab by including process ID and full title
+                // This ensures each browser tab is tracked separately
                 string normalizedTitle = appTitle ?? string.Empty;
-                // Collapse common generic titles
                 if (string.IsNullOrWhiteSpace(normalizedTitle)) normalizedTitle = appName;
-                return $"{appName}|{normalizedTitle}";
+                
+                // Include process ID to make each tab unique
+                return $"{appName}|{appId}|{normalizedTitle}";
             }
             else
             {

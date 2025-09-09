@@ -253,8 +253,7 @@ namespace VOWatcherWFPApp
             // Configure the DataGrid grouping
             ConfigureDataGridGrouping();
             _httpClient = new HttpClient();
-            _httpClient.DefaultRequestHeaders.Authorization =
-                new AuthenticationHeaderValue("Bearer", LoginWindow.userDetail.access_token);
+            // Don't set authorization header here - it will be set after login
 
 
 
@@ -275,6 +274,25 @@ namespace VOWatcherWFPApp
         {
             Dispatcher.Invoke(() =>
             {
+                // Stop polling timer
+                if (_pollingTimer != null)
+                {
+                    _pollingTimer.Stop();
+                    _pollingTimer = null;
+                }
+                
+                // Dispose HttpClient
+                _httpClient?.Dispose();
+                _httpClient = null;
+                
+                // Reset UI elements
+                btnLogin.Content = "Login";
+                txtStartTime.Text = "--:--:--";
+                txtTaskName.Text = null;
+                txtHours.Text = txtMinutes.Text = txtSeconds.Text = "00";
+                imgStartStop.Source = new BitmapImage(new Uri("start.png", UriKind.Relative));
+                StopElapsedTimer();
+                
                 System.Windows.MessageBox.Show("You have been logged out. This window will now close.", "Session Expired",
                                 MessageBoxButton.OK, MessageBoxImage.Warning);
                 this.Close(); // or DisableUI() if you want to keep it open but locked
@@ -299,13 +317,15 @@ namespace VOWatcherWFPApp
             currentTimeTimer.Tick += CurrentTimeTimer_Tick;
             currentTimeTimer.Start();
 
-
-            // ✅ 2. Check GoVirtual check-in status on load
-            CheckCurrentClockInStatus();
-
-            // ✅ 3. Load tracker timer from API using employee ID
-            int employeeid = LoginWindow.userDetail.employeeid;
-            LoadTrackerData();
+            // ✅ 2. Only load tracker data if user is logged in
+            if (LoginWindow.isLogin && LoginWindow.userDetail != null)
+            {
+                InitializeHttpClient();
+                // ✅ 3. Check GoVirtual check-in status on load
+                CheckCurrentClockInStatus();
+                // ✅ 4. Load tracker timer from API using employee ID
+                LoadTrackerData();
+            }
 
         }
 
@@ -324,6 +344,7 @@ namespace VOWatcherWFPApp
             if (LoginWindow.isLogin)
             {
                 btnLogin.Content = "Logout";
+                InitializeHttpClient();
                 return;
             }
 
@@ -334,11 +355,25 @@ namespace VOWatcherWFPApp
             if (result == true)
             {
                 btnLogin.Content = "Logout";
+                InitializeHttpClient();
+                // Load tracker data after successful login
+                LoadTrackerData();
             }
             else
             {
                 System.Windows.MessageBox.Show("You must be logged in to continue.", "Login Required", MessageBoxButton.OK, MessageBoxImage.Warning);
                 this.Close();
+            }
+        }
+
+        public void InitializeHttpClient()
+        {
+            if (LoginWindow.isLogin && LoginWindow.userDetail != null && !string.IsNullOrEmpty(LoginWindow.userDetail.access_token))
+            {
+                _httpClient?.Dispose();
+                _httpClient = new HttpClient();
+                _httpClient.DefaultRequestHeaders.Authorization =
+                    new AuthenticationHeaderValue("Bearer", LoginWindow.userDetail.access_token);
             }
         }
 
@@ -374,6 +409,9 @@ namespace VOWatcherWFPApp
                 {
                     // Login successful
                     btnLogin.Content = "Logout";
+                    InitializeHttpClient();
+                    // Load tracker data after successful login
+                    LoadTrackerData();
                 }
                 else
                 {
@@ -390,13 +428,25 @@ namespace VOWatcherWFPApp
         {
             try
             {
+                Debug.WriteLine("Loading tracker data...");
+                
+                // Check if user is logged in
+                if (!LoginWindow.isLogin || LoginWindow.userDetail == null)
+                {
+                    Debug.WriteLine("Cannot load tracker data - user not logged in");
+                    return;
+                }
+
                 await FetchAndDisplayTrackerTask();
                 await FetchTrackerTask(); // optional, depending on your use case
                 StartPollingForUpdates();
+                
+                Debug.WriteLine("Tracker data loaded successfully");
             }
             catch (Exception ex)
             {
-                System.Windows.MessageBox.Show($"Error: {ex.Message}", "Exception", MessageBoxButton.OK, MessageBoxImage.Error);
+                Debug.WriteLine($"Error loading tracker data: {ex.Message}");
+                System.Windows.MessageBox.Show($"Error loading tracker data: {ex.Message}", "Exception", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
@@ -405,6 +455,13 @@ namespace VOWatcherWFPApp
         {
             try
             {
+                // Check if user is logged in and has valid credentials
+                if (!LoginWindow.isLogin || LoginWindow.userDetail == null || string.IsNullOrEmpty(LoginWindow.userDetail.access_token))
+                {
+                    Debug.WriteLine("User not logged in or missing access token");
+                    return;
+                }
+
                 var oAuthParams = new VOAPIOAuthParams
                 {
                     BaseUrl = ConfigurationManager.AppSettings["baseurl"].ToString(), // <-- using your existing variable
@@ -444,13 +501,19 @@ namespace VOWatcherWFPApp
                 }
                 else
                 {
-                    System.Windows.MessageBox.Show("Failed to fetch tracker task.", "Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    Debug.WriteLine("Empty response from API");
+                    // Don't show error message for empty response as it might be normal
                 }
             }
             catch (Exception ex)
             {
-                Debug.WriteLine($"Exception: {ex.Message}");
-                System.Windows.MessageBox.Show($"Error: {ex.Message}", "Exception", MessageBoxButton.OK, MessageBoxImage.Error);
+                Debug.WriteLine($"Exception in FetchAndDisplayTrackerTask: {ex.Message}");
+                // Only show error message for critical errors, not for normal API failures
+                if (ex.Message.Contains("401") || ex.Message.Contains("Unauthorized"))
+                {
+                    System.Windows.MessageBox.Show("Session expired. Please login again.", "Authentication Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    LoginWindow.PerformLogout();
+                }
             }
         }
 
@@ -492,13 +555,31 @@ namespace VOWatcherWFPApp
             if (_pollingTimer != null)
                 return; // Already running
 
+            // Only start polling if user is logged in
+            if (!LoginWindow.isLogin || LoginWindow.userDetail == null)
+            {
+                Debug.WriteLine("Cannot start polling - user not logged in");
+                return;
+            }
+
             _pollingTimer = new DispatcherTimer();
             _pollingTimer.Interval = TimeSpan.FromSeconds(3); // You can reduce to 3 if needed
             _pollingTimer.Tick += async (s, e) =>
             {
-                await FetchAndDisplayTrackerTask();
+                // Check if still logged in before making API call
+                if (LoginWindow.isLogin && LoginWindow.userDetail != null)
+                {
+                    await FetchAndDisplayTrackerTask();
+                }
+                else
+                {
+                    // Stop polling if user is no longer logged in
+                    _pollingTimer?.Stop();
+                    _pollingTimer = null;
+                }
             };
             _pollingTimer.Start();
+            Debug.WriteLine("Started polling for tracker updates");
         }
 
 
@@ -1009,12 +1090,17 @@ namespace VOWatcherWFPApp
                     }
                 });
 
-                string appDetailSql = @"SELECT processid, case WHEN appdescription <> '' THEN appdescription else processname end appdescription, CASE WHEN apptitle LIKE '%.exe%' THEN processname ELSE apptitle END processname, 
+                string appDetailSql = @"SELECT processid, 
+                               CASE WHEN appdescription <> '' THEN appdescription ELSE processname END appdescription, 
+                               CASE WHEN apptitle LIKE '%.exe%' THEN processname ELSE apptitle END processname, 
                                strftime('%H:%M:%S', totaltime_secounds, 'unixepoch') totaltimesecounds, 
                                strftime('%H:%M:%S', idletime_secounds, 'unixepoch') idletimesecounds, 
                                strftime('%H:%M:%S', (totaltime_secounds - idletime_secounds), 'unixepoch') actualsecounds,
-                               strftime('%m/%d/%Y %H:%M:%S', start_time) starttime, strftime('%m/%d/%Y %H:%M:%S', end_time) endtime
-                               FROM tbl_activeapplicactions WHERE totaltime_secounds > 0  AND date(start_time) = @datepara ORDER BY appdescription, start_time DESC";
+                               strftime('%m/%d/%Y %H:%M:%S', start_time) starttime, 
+                               strftime('%m/%d/%Y %H:%M:%S', end_time) endtime
+                               FROM tbl_activeapplicactions 
+                               WHERE totaltime_secounds > 0 AND date(start_time) = @datepara 
+                               ORDER BY apptitle, start_time DESC";
 
                 List<ActiveTrackerAppModel> activeAppsDetail = dapper.GetAll<ActiveTrackerAppModel>(appDetailSql, parameters, CommandType.Text);
 
@@ -1185,43 +1271,41 @@ namespace VOWatcherWFPApp
                     }
                 }
 
-                // Browser normalization
+                // Browser normalization - Keep individual tab titles for separate tracking
                 bool isBrowser = cf.IsBrowserProcess(processName);
                 if (isBrowser)
                 {
-                    // Strip trailing browser name suffix from window title
+                    // Strip trailing browser name suffix from window title but keep the page title
                     string stripped = originalTitle;
                     stripped = RemoveSuffixIgnoreCase(stripped, " - Google Chrome");
                     stripped = RemoveSuffixIgnoreCase(stripped, " - Microsoft Edge");
                     stripped = RemoveSuffixIgnoreCase(stripped, " - Mozilla Firefox");
                     stripped = stripped.Trim();
 
-                    // Always use the domain from URL as the apptitle for consistent grouping
-                    string host = null;
-                    if (!string.IsNullOrWhiteSpace(url) && Uri.TryCreate(url, UriKind.Absolute, out var uri))
+                    // For individual tab tracking, use the full page title instead of just domain
+                    if (!string.IsNullOrWhiteSpace(stripped))
                     {
-                        host = uri.Host;
-                        System.Diagnostics.Debug.WriteLine($"URL captured: {url}, Host: {host}");
-                    }
-                    else
-                    {
-                        System.Diagnostics.Debug.WriteLine($"No URL captured for {processName}, originalTitle: {originalTitle}");
-                    }
-                    
-                    var domain = GetRegistrableDomain(host);
-                    if (!string.IsNullOrWhiteSpace(domain))
-                    {
-                        System.Diagnostics.Debug.WriteLine($"Using domain: {domain}");
-                        return domain;
+                        // If we have a URL, append it to the title for better identification
+                        if (!string.IsNullOrWhiteSpace(url) && Uri.TryCreate(url, UriKind.Absolute, out var uri))
+                        {
+                            System.Diagnostics.Debug.WriteLine($"URL captured: {url}, Title: {stripped}");
+                            // Return title with URL for unique identification
+                            return $"{stripped} ({uri.Host})";
+                        }
+                        else
+                        {
+                            System.Diagnostics.Debug.WriteLine($"No URL captured for {processName}, originalTitle: {originalTitle}");
+                            return stripped;
+                        }
                     }
 
-                    // Fallbacks when URL not available: use browser name
+                    // Fallbacks when no title available
                     if (stripped.Equals("New tab", StringComparison.OrdinalIgnoreCase) || stripped.Equals("New Tab", StringComparison.OrdinalIgnoreCase))
                     {
                         return "New Tab";
                     }
 
-                    // Map process to friendly browser label
+                    // Map process to friendly browser label as last resort
                     if (lowerProcess.Contains("chrome")) return "Google Chrome";
                     if (lowerProcess.Contains("msedge")) return "Microsoft Edge";
                     if (lowerProcess.Contains("firefox")) return "Mozilla Firefox";
@@ -1386,15 +1470,33 @@ namespace VOWatcherWFPApp
             if (string.IsNullOrEmpty(model.apptitle) || model.apptitle.ToLower() == "unknown-apptitle")
                 return;
 
-            // Always consolidate by apptitle per day
-            string sql = @"SELECT id, start_time, end_time, totaltime_secounds, idletime_secounds 
-                           FROM tbl_activeapplicactions 
-                           WHERE apptitle = @apptitle AND date(start_time) = @dateParam 
-                           ORDER BY start_time ASC LIMIT 1";
+            // For browsers, don't consolidate - keep individual tabs separate
+            // For other apps, consolidate by apptitle per day
+            string sql;
+            if (cf.IsBrowserProcess(model.processname))
+            {
+                // For browsers, check by apptitle AND processid to keep tabs separate
+                sql = @"SELECT id, start_time, end_time, totaltime_secounds, idletime_secounds 
+                        FROM tbl_activeapplicactions 
+                        WHERE apptitle = @apptitle AND processid = @processid AND date(start_time) = @dateParam 
+                        ORDER BY start_time ASC LIMIT 1";
+            }
+            else
+            {
+                // For non-browsers, consolidate by apptitle per day
+                sql = @"SELECT id, start_time, end_time, totaltime_secounds, idletime_secounds 
+                        FROM tbl_activeapplicactions 
+                        WHERE apptitle = @apptitle AND date(start_time) = @dateParam 
+                        ORDER BY start_time ASC LIMIT 1";
+            }
 
             var parameters = new DynamicParameters();
             parameters.Add("@apptitle", model.apptitle);
             parameters.Add("@dateParam", dateParam);
+            if (cf.IsBrowserProcess(model.processname))
+            {
+                parameters.Add("@processid", model.processid);
+            }
 
             var data = dapper.Get<ActiveAppProcessModel>(sql, parameters, commandType: CommandType.Text);
             if (data != null)
@@ -1469,7 +1571,7 @@ namespace VOWatcherWFPApp
 
         private void InsertNewRecord(ActiveAppProcessPara model, double initialActiveSeconds = 0, double initialIdleSeconds = 0)
         {
-            // Initialize a new consolidated record for this apptitle/day
+            // Initialize a new record for this apptitle/day (or apptitle/processid for browsers)
             DateTime startTime = model.endtime; // first seen time for today
             DateTime endTime = model.endtime;
             double totalTimeSeconds = Math.Max(0, initialActiveSeconds);
